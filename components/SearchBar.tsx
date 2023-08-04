@@ -7,7 +7,7 @@ type Props = {
   className?: string
 }
 
-function SearchBar({ className }: Props) {
+function SearchBar({ className = '' }: Props) {
   const router = useRouter();
   const [search, setSearch] = useState('')
 

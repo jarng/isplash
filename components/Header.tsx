@@ -5,7 +5,7 @@ type Props = {}
 
 function Header({ }: Props) {
   return (
-    <div className='px-6 flex items-center justify-between fixed border-b-2 border-solid bg-white shadow-gray-50 w-full h-16'>
+    <div className='flex px-6 items-center justify-between fixed top-0 border-b-2 border-solid bg-white shadow-gray-50 w-full h-16'>
       <SearchBar />
       <NavBar />
     </div>

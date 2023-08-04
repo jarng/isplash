@@ -1,7 +1,7 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation'
-import { useSearchPhotos } from '@/lib/api';
+import useSearchPhotos from '@/hooks/useSearchPhotos';
 import ImageGallery from '@/components/ImageGallery';
 
 type Props = {}
@@ -9,11 +9,23 @@ type Props = {}
 function SearchPage({ }: Props) {
   const searchParams = useSearchParams();
   const search = searchParams.get('query') || '';
-  console.log(search);
-
   const { data, isError, isLoading } = useSearchPhotos(30, search);
-  console.log(data);
 
+  if (isError) {
+    return (
+      <div className='w-full h-screen flex items-center justify-center'>
+        Something went wrong...
+      </div>
+    )
+  }
+
+  if (isLoading) {
+    return (
+      <div className='w-full h-screen flex items-center justify-center'>
+        Loading...
+      </div>
+    )
+  }
 
   return (
     <main className='w-full'>

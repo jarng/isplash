@@ -5,7 +5,7 @@ type Props = {
   className?: string
 }
 
-async function NavBar({ className }: Props) {
+async function NavBar({ className = '' }: Props) {
   const topics = await getTopics();
 
   return (
