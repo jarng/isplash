@@ -10,7 +10,7 @@ You can view the demo [here](https://devsamurai-test.vercel.app/).
 
 ## Features
 
-Basic features of UnSplash:
+I only implemented very basic features of UnSplash:
 
 - List of photos, grouped by topics
 - Search photos by keywords
@@ -21,7 +21,7 @@ The current UnSplash API limits the number of results to 30 per page.
 
 ## Tech-stack
 
-- Nextjs
+- Next
 - SWR for data fetching (client side)
 
 ## Quick Start
