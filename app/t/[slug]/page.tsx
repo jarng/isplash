@@ -21,12 +21,20 @@ type Props = {
   }
 }
 
-export default async function Test({ params }: Props) {
-  const data = await getPhotos(30, params.slug);
+export default async function TopicPage({ params }: Props) {
+  try {
+    const data = await getPhotos(30, params.slug);
 
-  return (
-    <main className='w-full'>
-      <ImageGallery images={data} />
-    </main>
-  )
+    return (
+      <main className='w-full'>
+        <ImageGallery images={data} />
+      </main>
+    )
+  } catch (err) {
+    return (
+      <div className='w-full h-screen flex items-center justify-center'>
+        Something went wrong...
+      </div>
+    )
+  }
 }

@@ -7,7 +7,7 @@ type Props = {
   className?: string
 }
 
-function SearchBar({ className = '' }: Props) {
+export default function SearchBar({ className = '' }: Props) {
   const router = useRouter();
   const [search, setSearch] = useState('')
 
@@ -31,5 +31,3 @@ function SearchBar({ className = '' }: Props) {
     </div>
   )
 }
-
-export default SearchBar

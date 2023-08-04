@@ -8,7 +8,7 @@ type Props = {
   topics: TTopic[]
 }
 
-function NavBar({ className = '', topics }: Props) {
+export default function NavBar({ className = '', topics }: Props) {
   const url = usePathname();
 
   return (
@@ -31,5 +31,3 @@ function NavBar({ className = '', topics }: Props) {
     </nav>
   )
 }
-
-export default NavBar

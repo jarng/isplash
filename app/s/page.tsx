@@ -6,7 +6,7 @@ import ImageGallery from '@/components/ImageGallery';
 
 type Props = {}
 
-function SearchPage({ }: Props) {
+export default function SearchPage({ }: Props) {
   const searchParams = useSearchParams();
   const search = searchParams.get('query') || '';
   const { data, isError, isLoading } = useSearchPhotos(30, search);
@@ -27,11 +27,17 @@ function SearchPage({ }: Props) {
     )
   }
 
+  if (data.length === 0) {
+    return (
+      <div className='w-full h-screen flex items-center justify-center'>
+        No results found...
+      </div>
+    )
+  }
+
   return (
     <main className='w-full'>
       <ImageGallery images={data} />
     </main>
   )
 }
-
-export default SearchPage;

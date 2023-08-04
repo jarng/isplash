@@ -24,7 +24,7 @@ The current UnSplash API limits the number of results to 30 per page.
 - Nextjs
 - SWR for data fetching (client side)
 
-## Quick-start
+## Quick Start
 
 For development purposes, you can run the app locally by following these steps:
 

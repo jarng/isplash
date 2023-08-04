@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar"
 
 type Props = {}
 
-async function Header({ }: Props) {
+export default async function Header({ }: Props) {
   const topics = await getTopics();
 
   return (
@@ -14,5 +14,3 @@ async function Header({ }: Props) {
     </div>
   )
 }
-
-export default Header

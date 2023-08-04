@@ -4,7 +4,7 @@ type Props = {
   images: TImage[]
 }
 
-function ImageGallery({ images }: Props) {
+export default function ImageGallery({ images }: Props) {
   return (
     <div className='columns-3 gap-6 pt-24 pb-6 px-6'>
       {
@@ -22,5 +22,3 @@ function ImageGallery({ images }: Props) {
     </div>
   )
 }
-
-export default ImageGallery

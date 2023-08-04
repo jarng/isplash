@@ -8,7 +8,7 @@ type Props = {
   className?: string
 }
 
-function ImageItem({src, width, height, alt, className}: Props) {
+export default function ImageItem({src, width, height, alt, className}: Props) {
   return (
     <div className={`${className}`}>
       <Image
@@ -22,5 +22,3 @@ function ImageItem({src, width, height, alt, className}: Props) {
     </div>
   )
 }
-
-export default ImageItem

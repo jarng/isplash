@@ -1,5 +1,5 @@
-import { getPhotos } from '@/lib/api';
 import ImageGallery from '@/components/ImageGallery';
+import { getPhotos } from '@/lib/api';
 
 export default async function Home() {
   const data = await getPhotos();
