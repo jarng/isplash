@@ -5,13 +5,19 @@ export const getPhotos = async (page: number, topicSlug?: string): Promise<TImag
   if (topicSlug) {
     res = await fetch(
       `https://api.unsplash.com/topics/${topicSlug}/photos/?client_id=${PUBLIC_KEY}&per_page=${page}`,
+      {
+        next: { revalidate: 3600 }
+      }
     )
   } else {
     res = await fetch(
       `https://api.unsplash.com/photos/?client_id=${PUBLIC_KEY}&per_page=${page}`,
+      {
+        next: { revalidate: 3600 }
+      }
     )
   }
-  
+
   if (!res.ok) {
     throw new Error(res.statusText);
   }
@@ -27,7 +33,10 @@ export const getPhotos = async (page: number, topicSlug?: string): Promise<TImag
 
 export const getTopics = async (): Promise<TTopic[]> => {
   const res = await fetch(
-    `https://api.unsplash.com/topics/?client_id=${PUBLIC_KEY}&per_page=5&order_by=popular`,
+    `https://api.unsplash.com/topics/?client_id=${PUBLIC_KEY}&per_page=6&order_by=popular`,
+    {
+      next: { revalidate: 3600 }
+    }
   )
   if (!res.ok) {
     throw new Error(res.statusText);
