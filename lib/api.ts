@@ -31,9 +31,9 @@ export const getPhotos = async (page = 30, topicSlug?: string): Promise<TImage[]
   }));
 }
 
-export const getTopics = async (): Promise<TTopic[]> => {
+export const getTopics = async (quantity = 6): Promise<TTopic[]> => {
   const res = await fetch(
-    `https://api.unsplash.com/topics/?client_id=${API_KEY}&per_page=6&order_by=popular`,
+    `https://api.unsplash.com/topics/?client_id=${API_KEY}&per_page=${quantity}&order_by=popular`,
     {
       next: { revalidate: 3600 }
     }

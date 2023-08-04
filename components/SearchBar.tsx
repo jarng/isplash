@@ -18,7 +18,7 @@ export default function SearchBar({ className = '' }: Props) {
   }
 
   return (
-    <div className={`${className} flex items-center justify-between w-full h-full]`}>
+    <div className={`${className} flex items-center justify-between h-full]`}>
       <form onSubmit={handleSubmit}>
         <input
           className='border border-solid rounded-md py-2 px-4'
