@@ -9,12 +9,12 @@ type Props = {
 
 export default function SearchBar({ className = '' }: Props) {
   const router = useRouter();
-  const [search, setSearch] = useState('')
+  const [search, setSearch] = useState('');
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSearch('');
-    router.push(`/s?query=${search}`)
+    router.push(`/s?query=${search.trim().replaceAll(' ', '-')}`);
   }
 
   return (
