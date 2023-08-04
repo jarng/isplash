@@ -1,6 +1,6 @@
 # ISplash
 
-A simple clone of [Unplash](https://unsplash.com/). The project is for the interview test at [DevSamurai](https://devsamurai.vn/). This is not a full-fledged app, but rather a demo of my coding style and skills, and of course, for educational purposes.
+A simple clone of [Unplash](https://unsplash.com/). The project is for the interview test at [DevSamurai](https://devsamurai.vn/). This is not a full-fledged app, but rather a demo, and of course, for educational purposes.
 
 ## Demo
 
