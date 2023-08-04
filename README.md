@@ -2,6 +2,8 @@
 
 A simple clone of [Unplash](https://unsplash.com/). The project is for the interview test at [DevSamurai](https://devsamurai.vn/). This is not a full-fledged app, but rather a demo, and of course, for educational purposes.
 
+![image](https://github.com/nhthieu/isplash/assets/74890715/96ac0fe6-db2d-4b7f-aceb-5a4f754d94e8)
+
 ## Demo
 
 You can view the demo [here](https://devsamurai-test.vercel.app/).
