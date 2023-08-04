@@ -2,7 +2,7 @@ import { getPhotos } from '@/lib/api';
 import ImageGallery from '@/components/ImageGallery';
 
 export default async function Home() {
-  const data = await getPhotos(30);
+  const data = await getPhotos();
 
   return (
     <main className='w-full'>

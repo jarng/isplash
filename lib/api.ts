@@ -1,6 +1,6 @@
 const API_KEY = process.env.API_KEY;
 
-export const getPhotos = async (page: number, topicSlug?: string): Promise<TImage[]> => {
+export const getPhotos = async (page = 30, topicSlug?: string): Promise<TImage[]> => {
   let res;
   if (topicSlug) {
     res = await fetch(
@@ -22,7 +22,6 @@ export const getPhotos = async (page: number, topicSlug?: string): Promise<TImag
     throw new Error(res.statusText);
   }
   const data = await res.json();
-  console.log(data);
   return data.map((image: any) => ({
     id: image.id,
     src: image.urls.regular,

@@ -24,8 +24,6 @@ type Props = {
 export default async function Test({ params }: Props) {
   const data = await getPhotos(30, params.slug);
 
-  console.log(data[0].alt);
-
   return (
     <main className='w-full'>
       <ImageGallery images={data} />

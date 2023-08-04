@@ -10,7 +10,6 @@ type Props = {
 
 function NavBar({ className = '', topics }: Props) {
   const url = usePathname();
-  console.log(url);
 
   return (
     <nav className={`${className} w-full`}>
