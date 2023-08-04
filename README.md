@@ -4,6 +4,10 @@ A very basic clone of [UnSplash](https://unsplash.com/). The project is built fo
 
 ![image](https://github.com/nhthieu/isplash/assets/74890715/96ac0fe6-db2d-4b7f-aceb-5a4f754d94e8)
 
+## Note
+
+Fixing the website at the moment...
+
 ## Demo
 
 You can view the demo [here](https://devsamurai-test.vercel.app/).
