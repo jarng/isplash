@@ -11,6 +11,14 @@ export default function SearchPage({ }: Props) {
   const search = searchParams.get('query') || '';
   const { data, isError, isLoading } = useSearchPhotos(30, search);
 
+  if (isLoading) {
+    return (
+      <div className='w-full h-screen flex items-center justify-center'>
+        Loading...
+      </div>
+    )
+  }
+
   if (isError) {
     return (
       <div className='w-full h-screen flex items-center justify-center'>
@@ -19,13 +27,6 @@ export default function SearchPage({ }: Props) {
     )
   }
 
-  if (isLoading) {
-    return (
-      <div className='w-full h-screen flex items-center justify-center'>
-        Loading...
-      </div>
-    )
-  }
 
   if (data.length === 0) {
     return (
