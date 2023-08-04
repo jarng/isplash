@@ -9,7 +9,7 @@ async function NavBar({ className }: Props) {
   const topics = await getTopics();
 
   return (
-    <nav className={`${className} w-full h-16 border-b-2 border-solid fixed bg-white shadow-gray-50`}>
+    <nav className={`${className} w-full`}>
       <div className='flex max-w-3xl h-full mx-auto items-center justify-between'>
         <Link href='/' className='text-gray-500 hover:text-gray-900'>Home</Link>
         {
