@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 type Props = {
   src: string;
@@ -16,7 +16,7 @@ function ImageItem({src, width, height, alt, className}: Props) {
         width={width}
         height={height}
         alt={alt}
-        placeholder="blur"
+        placeholder='blur'
         blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mPs6++vBwAFjAItFg62vQAAAABJRU5ErkJggg=='
       />
     </div>

@@ -1,4 +1,4 @@
-import ImageItem from "./ImageItem"
+import ImageItem from './ImageItem'
 
 type Props = {
   images: TImage[]
@@ -6,7 +6,7 @@ type Props = {
 
 function ImageGallery({ images }: Props) {
   return (
-    <div className="columns-3 gap-6 p-6 pt-24">
+    <div className='columns-3 gap-6 p-6 pt-24'>
       {
         images.map((image) => (
           <ImageItem
@@ -15,7 +15,7 @@ function ImageGallery({ images }: Props) {
             alt={image.alt}
             width={image.width}
             height={image.height}
-            className="mb-6"
+            className='mb-6'
           />
         ))
       }
