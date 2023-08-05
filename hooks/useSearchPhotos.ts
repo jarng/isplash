@@ -3,7 +3,7 @@ import useSWR from 'swr';
 // client env
 const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
-const fetcher = (url: string): Promise<TImage[]> => fetch(url).then((r: any) => {
+const fetcher = (url: string): Promise<TImage[]> => fetch(url).then((r: Response) => {
   if (!r.ok) {
     throw new Error(r.statusText);
   }
@@ -25,7 +25,7 @@ const useSearchPhotos = (page: number, search: string): {
   isLoading: boolean,
 } => {
   const url = `https://api.unsplash.com/search/photos/?query=${search}&client_id=${API_KEY}&per_page=${page}`;
-  const { data, error, isLoading } = useSWR(
+  const { data, error, isLoading } = useSWR<TImage[]>(
     url,
     fetcher,
   )

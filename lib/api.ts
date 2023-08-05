@@ -43,7 +43,7 @@ export const getTopics = async (quantity = 6): Promise<TTopic[]> => {
   }
 
   const data = await res.json();
-  return data.map((topic: any) => ({
+  return data.map((topic: TTopic) => ({
     id: topic.id,
     slug: topic.slug,
     title: topic.title,
