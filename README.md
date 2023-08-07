@@ -1,6 +1,6 @@
 # ISplash
 
-A very basic clone of [UnSplash](https://unsplash.com/). The project is built for the interview test at [DevSamurai](https://devsamurai.vn/). This is not a full-fledged app, but rather a demo, and of course, for educational purposes.
+A very basic clone of [UnSplash](https://unsplash.com/). The project is built for the interview test at [DevSamurai](https://devsamurai.vn/). This is not a full-fledged app, but rather for educational purposes.
 
 ![image](https://github.com/nhthieu/isplash/assets/74890715/96ac0fe6-db2d-4b7f-aceb-5a4f754d94e8)
 
