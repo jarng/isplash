@@ -4,13 +4,9 @@ A very basic clone of [UnSplash](https://unsplash.com/). The project is built fo
 
 ![image](https://github.com/nhthieu/isplash/assets/74890715/96ac0fe6-db2d-4b7f-aceb-5a4f754d94e8)
 
-## Note
-
-Fixing the website at the moment...
-
 ## Demo
 
-You can view the demo [here](https://devsamurai-test.vercel.app/).
+No demo at the moment since my Vercel account is at 80% of the 1000 image optimization limit...
 
 ## Features
 
@@ -36,3 +32,5 @@ For development purposes, you can run the app locally by following these steps:
 2. Install dependencies: `npm install`
 3. Add your UnSplash API key to `.env.local` file, refer to `.env.example` for the format
 4. Run `npm run dev` to start the server
+
+For local production, run `npm run build` to build the project and then run `npm start`.
