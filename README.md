@@ -17,7 +17,9 @@ I only implemented very basic features of UnSplash:
 
 ## Limitations
 
-The current UnSplash API limits the number of results to 30 per page.
+- The current UnSplash API limits the number of results to 30 per page.
+- No responsive due to time limitation (school work) on my end
+- Topics could have been broader
 
 ## Tech-stack
 
@@ -26,11 +28,14 @@ The current UnSplash API limits the number of results to 30 per page.
 
 ## Quick Start
 
-For development purposes, you can run the app locally by following these steps:
+You can run the app locally by following these steps:
 
 1. Clone the repo
 2. Install dependencies: `npm install`
 3. Add your UnSplash API key to `.env.local` file, refer to `.env.example` for the format
-4. Run `npm run dev` to start the server
+4. Run `npm run dev` to start the server for development
+5. Run `npm run build` then `npm start` to start the server for production
 
-For local production, run `npm run build` to build the project and then run `npm start`.
+## License
+
+The source code of the project is licensed under the MIT License, refer to the [LICENSE](/LICENSE) for more details. All credits belong to the [DevSamurai team](https://devsamurai.vn/).
