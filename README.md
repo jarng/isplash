@@ -1,6 +1,6 @@
 # ISplash
 
-A very basic clone of [UnSplash](https://unsplash.com/). The project is built for the interview test at [DevSamurai](https://devsamurai.vn/). This is not a full-fledged app, but rather for educational purposes.
+A very basic clone of [UnSplash](https://unsplash.com/). The project is built for an internship interview test. This is not a full-fledged app, but rather for educational purposes.
 
 ![image](https://github.com/nhthieu/isplash/assets/74890715/96ac0fe6-db2d-4b7f-aceb-5a4f754d94e8)
 
@@ -31,11 +31,10 @@ I only implemented very basic features of UnSplash:
 You can run the app locally by following these steps:
 
 1. Clone the repo
-2. Install dependencies: `npm install`
+2. Install dependencies: `bun install`
 3. Add your UnSplash API key to `.env.local` file, refer to `.env.example` for the format
-4. Run `npm run dev` to start the server for development
-5. Run `npm run build` then `npm start` to start the server for production
+4. Run `bun dev` to start the server for development
 
 ## License
 
-The source code of the project is licensed under the MIT License, refer to the [LICENSE](/LICENSE) for more details. All credits belong to the [DevSamurai team](https://devsamurai.vn/).
+The source code of the project is licensed under the MIT License, refer to the [LICENSE](/LICENSE) for more details.
